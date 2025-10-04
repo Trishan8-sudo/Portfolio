@@ -1,0 +1,24 @@
+body{
+    background: linear-gradient(to bottom, #168092, #38acc0,#4ecdc4);
+    font-family: Roboto;
+    }
+    header{
+        color: rgb(102, 9, 9);
+        font-size: 20px;
+    }
+    div > img{
+        height: 150px;
+        width: 220px;
+    }
+    h1{
+        color: rgb(102, 9, 9);
+    }
+    .Ingredients{
+        color: blue;
+    }
+    .Recipie{
+        color: rgb(15, 117, 117);
+    }
+    ul{
+        font-size: 22px;
+    }

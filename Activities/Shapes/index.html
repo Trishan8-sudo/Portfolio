@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: linear-gradient(to right, #2c7e97, #3dd8d0);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .Box{
+            font-family: Montserrat;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-color: green;
+            border: solid;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+            width: 20vh;
+            height: 10vh;
+            margin: 5px;
+            cursor: pointer;
+            color: white;
+            transition: opacity 0.2s;
+        }
+        .Box:hover{
+            opacity: 0.7;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://www.youtube.com" target="_blank"><div class="Box">YOUTUBE</div></a>
+        <a href="https://www.github.com" target="_blank"><div class="Box">GITHUB</div></a>
+        <a href="https://www.gmail.com" target="_blank"><div class="Box">GMAIL</div></a>
+        <a href="https://www.pnterest.com" target="_blank"><div class="Box">PINTEREST</div></a>
+        <a href="https://codeforces.com" target="_blank"><div class="Box">CODEFORCES</div></a>
+        <a href="https://www.linkedin.com" target="_blank"><div class="Box">LINKEDIN</div></a>
+        <a href="https://www.chatgpt.com" target="_blank"><div class="Box">CHATGPT</div></a>
+        <a href="https://www.amazon.in" target="_blank"><div class="Box">AMAZON</div></a>
+        <a href="https://www.leetcode.com" target="_blank"><div class="Box">LEETCODE</div></a>
+    </div>
+</body>
+</html>
