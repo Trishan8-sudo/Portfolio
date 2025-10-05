@@ -34,6 +34,15 @@ body {
     nav a:hover {
       color: #0a9396;
     }
+    @media (max-width: 480px) {
+      nav a {
+        font-size: 12px;
+      }
+
+      nav {
+        gap: 5px;
+      }
+    }
     .hero {
       padding: 60px 20px;
       text-align: center;
@@ -45,6 +54,17 @@ body {
         width: 200px;
         border-radius: 50%;
         box-shadow: 0 4px 8px rgba(248, 246, 246, 0.3);
+        animation: pulse 2s ease-in-out infinite;
+      }
+    }
+    @keyframes pulse{
+      0%,100%{
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(248, 246, 246, 0.3);
+      }
+      50%{
+        transform: scale(1.07);
+        box-shadow: 0 9px 11px rgba(248, 246, 246, 0.3);
       }
     }
     .hero h2 {
@@ -116,6 +136,12 @@ body {
       background: #fafafa;
       color: white;
       background-color: #073345;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+    .project:hover{
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 12px 25px rgba(0, 255, 255, 0.25);
     }
     .project > a{
       color: #6fffe9;
@@ -139,4 +165,9 @@ body {
     }
     .socials a:hover{
       color: #0a9396;
+    }
+    @media (maxwidth:450px){
+      nav > a{
+        font-size: 10px;
+      }
     }
